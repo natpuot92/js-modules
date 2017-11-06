@@ -1,0 +1,7 @@
+  $('#main').click((evt) => {
+    if ($(event.target).closest('.main-nav__menu').length) {
+      return;
+    }
+    homeMenu.removeClass('menu-right');
+    homeMenu.addClass('menu-left');
+  });
